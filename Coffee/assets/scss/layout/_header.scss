@@ -1,0 +1,36 @@
+#header{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        text-align: center;
+        color: #e6a756;
+        font-weight: 800;
+        font-size: 32px;
+
+    }
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 80px;
+        font-weight: 100;
+    }
+}
+@media (min-width: 320px) and (max-width: 562px) {
+    #header{
+        display: none;
+    }
+}
+
+@media (min-width: 562px) and (max-width: 768px){
+    #header{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 960px){
+    #header{
+        display: none;
+    }
+}

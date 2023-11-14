@@ -1,0 +1,546 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+#nav {
+  background-color: rgba(47, 23, 15, 0.9);
+  padding: 30px;
+}
+#nav .navMenu {
+  display: none;
+  width: 80%;
+  margin: auto;
+}
+#nav .navMenu ul li a {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-size: 15px;
+  transition: 0.5s all ease;
+}
+#nav .navMenu ul li a:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+#nav .show {
+  display: block;
+  transition: 0.5s all ease;
+}
+#nav .nav-response {
+  display: none;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+#nav .nav-response h1 {
+  color: #e6a756;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+#nav .nav-response button {
+  background-color: rgba(47, 23, 15, 0.9);
+  border: 1px solid rgb(189, 83, 48);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+#nav .nav-response button i {
+  font-size: 16px;
+  color: white;
+}
+#nav .nav-list {
+  padding: 24px 0px;
+  max-width: 40%;
+  margin: auto;
+}
+#nav .nav-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav .nav-list ul li a {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-size: 15px;
+  transition: 0.5s all ease;
+}
+#nav .nav-list ul li a:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 320px) and (max-width: 562px) {
+  #nav .nav-response {
+    display: flex;
+  }
+  #nav .nav-list {
+    display: none;
+  }
+}
+@media (min-width: 562px) and (max-width: 768px) {
+  #nav .nav-response {
+    display: flex;
+  }
+  #nav .nav-list {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  #nav .nav-response {
+    display: flex;
+  }
+  #nav .nav-list {
+    display: none;
+  }
+}
+#header {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#header p {
+  text-align: center;
+  color: #e6a756;
+  font-weight: 800;
+  font-size: 32px;
+}
+#header h1 {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  font-weight: 100;
+}
+
+@media (min-width: 320px) and (max-width: 562px) {
+  #header {
+    display: none;
+  }
+}
+@media (min-width: 562px) and (max-width: 768px) {
+  #header {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  #header {
+    display: none;
+  }
+}
+#footer {
+  background-color: rgba(47, 23, 15, 0.9);
+  padding: 48px 0px;
+}
+#footer p {
+  font-size: 14px;
+  color: #f6e1c5;
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(/assets/imgs/home-bck.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#fresh-cofe {
+  min-height: 100vh;
+  margin: 80px 0px;
+}
+#fresh-cofe .content {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+}
+#fresh-cofe .content img {
+  min-height: 450px;
+  border-radius: 10px;
+  width: 75%;
+  float: right;
+}
+#fresh-cofe .content .content-text {
+  min-height: 380px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  margin-top: 3rem;
+  position: absolute;
+  background-color: #f6e1c5;
+  border-radius: 10px;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#fresh-cofe .content .content-text h2 {
+  color: #212529;
+  text-align: center;
+  text-transform: uppercase;
+}
+#fresh-cofe .content .content-text h2 .fresh-text {
+  font-size: 16px;
+  font-weight: 800;
+  display: block;
+}
+#fresh-cofe .content .content-text h2 .drink {
+  display: block;
+  font-size: 48px;
+  font-weight: 100;
+}
+#fresh-cofe .content .content-text p {
+  text-align: center;
+  font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+}
+#fresh-cofe .content .content-text button {
+  position: absolute;
+  bottom: -30px;
+  background-color: #e6a756;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s all ease;
+}
+#fresh-cofe .content .content-text button:hover {
+  background-color: rgb(255, 200, 129);
+  cursor: pointer;
+}
+#fresh-cofe .content .content-text button a {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#promise {
+  padding: 80px;
+  margin: 80px 0px;
+  background-color: rgba(230, 167, 86, 0.9);
+}
+#promise .promise-text {
+  padding: 24px 32px;
+  background-color: #f6e1c5;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid #e6a756;
+}
+#promise .promise-text h2 {
+  display: flex;
+  flex-direction: column;
+  color: #212529;
+}
+#promise .promise-text h2 .promise-our {
+  font-size: 16px;
+  font-weight: 800;
+}
+#promise .promise-text h2 .to-you {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 320px) and (max-width: 562px) {
+  #fresh-cofe .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+  }
+  #fresh-cofe .content img {
+    min-height: 450px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  #fresh-cofe .content .content-text {
+    min-height: 380px;
+    width: 100%;
+    margin-top: 48px;
+    background-color: #f6e1c5;
+    border-radius: 10px;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #fresh-cofe .content .content-text h2 {
+    color: #212529;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #fresh-cofe .content .content-text h2 .fresh-text {
+    font-size: 16px;
+    font-weight: 800;
+    display: block;
+  }
+  #fresh-cofe .content .content-text h2 .drink {
+    display: block;
+    font-size: 48px;
+    font-weight: 100;
+  }
+  #fresh-cofe .content .content-text p {
+    text-align: center;
+    font-size: 16px;
+    color: #212529;
+    font-weight: 400;
+  }
+  #promise {
+    padding: 30px;
+  }
+  #promise .promise-text h2 .promise-our {
+    font-size: 16px;
+    font-weight: 800;
+  }
+  #promise .promise-text h2 .to-you {
+    font-size: 32px;
+    font-weight: 100;
+  }
+  #promise .promise-text p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 562px) and (max-width: 768px) {
+  #fresh-cofe .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+  }
+  #fresh-cofe .content img {
+    min-height: 450px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  #fresh-cofe .content .content-text {
+    min-height: 380px;
+    width: 100%;
+    margin-top: 48px;
+    background-color: #f6e1c5;
+    border-radius: 10px;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #fresh-cofe .content .content-text h2 {
+    color: #212529;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #fresh-cofe .content .content-text h2 .fresh-text {
+    font-size: 16px;
+    font-weight: 800;
+    display: block;
+  }
+  #fresh-cofe .content .content-text h2 .drink {
+    display: block;
+    font-size: 48px;
+    font-weight: 100;
+  }
+  #fresh-cofe .content .content-text p {
+    text-align: center;
+    font-size: 16px;
+    color: #212529;
+    font-weight: 400;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  #fresh-cofe .content {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+  }
+  #fresh-cofe .content img {
+    min-height: 450px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  #fresh-cofe .content .content-text {
+    min-height: 380px;
+    width: 100%;
+    margin-top: 48px;
+    background-color: #f6e1c5;
+    border-radius: 10px;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #fresh-cofe .content .content-text h2 {
+    color: #212529;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #fresh-cofe .content .content-text h2 .fresh-text {
+    font-size: 16px;
+    font-weight: 800;
+    display: block;
+  }
+  #fresh-cofe .content .content-text h2 .drink {
+    display: block;
+    font-size: 48px;
+    font-weight: 100;
+  }
+  #fresh-cofe .content .content-text p {
+    text-align: center;
+    font-size: 16px;
+    color: #212529;
+    font-weight: 400;
+  }
+}
+body {
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(/assets/imgs/home-bck.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#about {
+  min-height: 100vh;
+  margin: 80px 0px;
+}
+#about .content-about {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+}
+#about .content-about img {
+  border-radius: 10px;
+  width: 100%;
+}
+#about .content-about .aboutText {
+  min-height: 380px;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  width: 70%;
+  background-color: #f6e1c5;
+  border-radius: 10px;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+#about .content-about .aboutText h2 {
+  color: #212529;
+  text-transform: uppercase;
+}
+#about .content-about .aboutText h2 .about-text {
+  font-size: 16px;
+  font-weight: 800;
+  display: block;
+}
+#about .content-about .aboutText h2 .about-our {
+  display: block;
+  font-size: 48px;
+  font-weight: 100;
+}
+#about .content-about .aboutText p {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+}
+
+@media (min-width: 320px) and (max-width: 562px) {
+  #about {
+    min-height: 100vh;
+    margin: 80px 0px;
+  }
+  #about .content-about {
+    max-width: 90%;
+    margin: auto;
+  }
+  #about .content-about img {
+    width: 100%;
+  }
+  #about .content-about .aboutText {
+    min-height: 380px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 32px 40px;
+  }
+  #about .content-about .aboutText h2 .about-text {
+    font-size: 13px;
+  }
+  #about .content-about .aboutText h2 .about-our {
+    font-size: 25px;
+  }
+  #about .content-about .aboutText p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 562px) and (max-width: 768px) {
+  #about {
+    min-height: 100vh;
+    margin: 80px 0px;
+  }
+  #about .content-about {
+    max-width: 90%;
+    margin: auto;
+  }
+  #about .content-about img {
+    width: 100%;
+  }
+  #about .content-about .aboutText {
+    min-height: 380px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 32px 40px;
+  }
+  #about .content-about .aboutText h2 .about-text {
+    font-size: 13px;
+  }
+  #about .content-about .aboutText h2 .about-our {
+    font-size: 25px;
+  }
+  #about .content-about .aboutText p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  #about {
+    min-height: 100vh;
+    margin: 80px 0px;
+  }
+  #about .content-about {
+    max-width: 90%;
+    margin: auto;
+  }
+  #about .content-about img {
+    width: 100%;
+  }
+  #about .content-about .aboutText {
+    min-height: 380px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 32px 40px;
+  }
+  #about .content-about .aboutText h2 .about-text {
+    font-size: 13px;
+  }
+  #about .content-about .aboutText h2 .about-our {
+    font-size: 25px;
+  }
+  #about .content-about .aboutText p {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=style.css.map */
